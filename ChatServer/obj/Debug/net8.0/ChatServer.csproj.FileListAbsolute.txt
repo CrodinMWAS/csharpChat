@@ -1,0 +1,14 @@
+D:\Programming     _\Suli\13\ChatApp\ChatServer\bin\Debug\net8.0\ChatServer.exe
+D:\Programming     _\Suli\13\ChatApp\ChatServer\bin\Debug\net8.0\ChatServer.deps.json
+D:\Programming     _\Suli\13\ChatApp\ChatServer\bin\Debug\net8.0\ChatServer.runtimeconfig.json
+D:\Programming     _\Suli\13\ChatApp\ChatServer\bin\Debug\net8.0\ChatServer.dll
+D:\Programming     _\Suli\13\ChatApp\ChatServer\bin\Debug\net8.0\ChatServer.pdb
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfoInputs.cache
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfo.cs
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.csproj.CoreCompileInputs.cache
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.dll
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\refint\ChatServer.dll
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.pdb
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll
