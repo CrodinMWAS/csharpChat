@@ -19,3 +19,4 @@ D:\Programming     _\Suli\13\ChatApp\ChatApp\obj\Debug\net8.0-windows\ChatClient
 D:\Programming     _\Suli\13\ChatApp\ChatApp\obj\Debug\net8.0-windows\ChatClient.genruntimeconfig.cache
 D:\Programming     _\Suli\13\ChatApp\ChatApp\obj\Debug\net8.0-windows\ref\ChatClient.dll
 D:\Programming     _\Suli\13\ChatApp\ChatApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Programming     _\Suli\13\ChatApp\ChatApp\obj\Debug\net8.0-windows\ChatClient.sourcelink.json

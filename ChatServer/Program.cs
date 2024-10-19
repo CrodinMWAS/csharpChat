@@ -47,6 +47,20 @@ namespace ChatServer
             }
         }
 
+        public static void SendPrivateMessage(string target, string msg)
+        {
+            var broadcastPacket = new PacketBuilder();
+            broadcastPacket.WriteOpCode(5);
+            broadcastPacket.WriteMsg(msg);
+            foreach (var user in _users)
+            {
+                if (user.UID.ToString() == target)
+                {
+                    user.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
+                }
+            }
+        }
+
         public static void BroadcastDisconnect(string UID)
         {
             var disconnectedUser = _users.Where(x => x.UID.ToString() == UID).FirstOrDefault();

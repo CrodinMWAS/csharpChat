@@ -40,9 +40,15 @@ namespace ChatServer
                     switch (opcode)
                     {
                         case 5:
+                            var channel = _packetReader.ReadMsg();
                             var msg = _packetReader.ReadMsg();
                             Console.WriteLine($"[{DateTime.Now}]: {msg} Recieved.");
-                            Program.BroadcastMessage($"[{DateTime.Now}] [{UserName}]: {msg} ");
+                            Program.SendPrivateMessage(channel, $"Private : [{DateTime.Now}] [{UserName}]: {msg} ");
+                            break;
+                        case 50:
+                            var message = _packetReader.ReadMsg();
+                            Console.WriteLine($"[{DateTime.Now}]: {message} Recieved.");
+                            Program.BroadcastMessage($"[{DateTime.Now}] [{UserName}]: {message} ");
                             break;
                         default:
                             break;

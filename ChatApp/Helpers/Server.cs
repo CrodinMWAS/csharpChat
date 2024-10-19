@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChatClient.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -58,10 +59,18 @@ namespace ChatClient.Helpers
             });
         }
 
-        public void SendMsgToServer(string msg) 
+        public void SendMsgToServer(string channel, string msg) 
         {
             var messagePacket = new PacketBuilder();
-            messagePacket.WriteOpCode(5);
+            if (channel == "PUBLIC")
+            {
+                messagePacket.WriteOpCode(50);
+            }
+            else
+            {
+                messagePacket.WriteOpCode(5);
+                messagePacket.WriteMsg(channel);
+            }
             messagePacket.WriteMsg(msg);
             _client.Client.Send(messagePacket.GetPacketBytes());
         }

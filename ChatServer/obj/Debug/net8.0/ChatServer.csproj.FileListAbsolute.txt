@@ -12,3 +12,4 @@ D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\refint\ChatServ
 D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.pdb
 D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
 D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll
+D:\Programming     _\Suli\13\ChatApp\ChatServer\obj\Debug\net8.0\ChatServer.sourcelink.json

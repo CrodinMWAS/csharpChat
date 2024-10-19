@@ -18,7 +18,7 @@
                     DockPanel.Dock="Top"
                     Content="Connect"
                     Command="{Binding ConnectToServerCommand}"/>
-            <ListView ItemsSource="{Binding Users}">
+            <ListView ItemsSource="{Binding Users}" SelectedItem="{Binding Channel, Mode=TwoWay}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding UserName}"></TextBlock>
@@ -27,16 +27,17 @@
             </ListView>
         </DockPanel>
         <StackPanel Grid.Column="1">
-                    <ListView Height="380" ItemsSource="{Binding Messages}"/>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox Height="55"
-                                Width="545"
-                                Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}"
-                                VerticalContentAlignment="Center"/>
-                        <Button Width="55"
-                                Command="{Binding SendMessageCommand}"
-                                Content="Send"/>
-                    </StackPanel>
-                </StackPanel>
+            <TextBlock Text="{Binding Channel.UserName}" TextAlignment="Center" Height="50" FontSize="30"></TextBlock>
+            <ListView Height="330" ItemsSource="{Binding Messages}" BorderBrush="Transparent"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Height="55"
+                        Width="545"
+                        Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}"
+                        VerticalContentAlignment="Center"/>
+                <Button Width="55"
+                        Command="{Binding SendMessageCommand}"
+                        Content="Send"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
